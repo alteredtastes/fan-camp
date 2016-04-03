@@ -6,14 +6,20 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="http://bootswatch.com/darkly/bootstrap.min.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="http://connect.soundcloud.com/sdk.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <div class='container'>
+      <img src="media/Fan-Camp-Logo.png" id="logo" />
       <h1>Rep This!</h1>
       <div class="input-group input-group-sm">
-        <input type="text" class="form-control" placeholder="Search Bands..." />
-        <button type="button" class="btn btn-sm btn-primary">Go</button>
+        <input type="text" name="Soundcloud" class="form-control" placeholder="Search Bands..." />
+        <button type="button" class="btn btn-sm btn-primary" id="search">Go</button>
+        <div id="results"></div>
       </div>
     </div>
+    <footer>&copy 2016 FanCamp</footer>
   </body>
 </html>
