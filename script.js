@@ -4,7 +4,7 @@ SC.initialize({
 
 // Loop through tradck data and append SC embed.
 function makeCenterFromTracks(tracks) {
-  var results = document.querySelector('.input-group')
+  var container = document.querySelector('.container');
 	var track, permURL, newDiv;
 	for (var i = 0; i <= 10; i++) {
 		newDiv = document.createElement("center");
@@ -12,7 +12,7 @@ function makeCenterFromTracks(tracks) {
 		track=tracks[i];
 		SC.oEmbed(track.permalink_url,{color:"ff0066",
 				  maxwidth:750, maxheight: 166},newDiv);
-		document.results.appendChild(newDiv);
+		container.appendChild(newDiv);
 	}
 }
 
